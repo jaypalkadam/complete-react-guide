@@ -1,0 +1,27 @@
+A component is a function returning a some Jsx;
+
+we can create component using two ways  in React.
+
+Functional components (also referred to as "presentational", "dumb" or "stateless" components - more about this later in the course) => const cmp = () => { return <div>some JSX</div> } (using ES6 arrow functions as shown here is recommended but optional)
+class-based components (also referred to as "containers", "smart" or "stateful" components) => class Cmp extends Component { render () { return <div>some JSX</div> } } 
+
+It is preferred way to create component use new js file and for using the new component we have to import hat into the app.js file.
+
+
+Props
+This is used  to take attribute values which is passed to the selector. Also we can get the child value s using the props.\
+like 
+
+<created template name ="xyz" age =" 24"> 
+    My name is test value
+</created template>
+
+We get name and age attribute values , inner values ( here we can get the  my name is test value ) such as ul tag ,any other component selector.
+
+Getting the value of the props in the Functional components we hve to use {props.(attribute name)}.
+
+Getting the value of the props in the class-based components we hve to use {this.props.(attribute name)}.
+
+We can access children using props.children
+
+
